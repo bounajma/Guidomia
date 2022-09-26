@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		8645DE5528E243830001611F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE5428E243830001611F /* AppCoordinator.swift */; };
 		8645DE5828E2450C0001611F /* ConsultationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE5728E2450C0001611F /* ConsultationCoordinator.swift */; };
+		8645DE5E28E247EF0001611F /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 8645DE5D28E247EF0001611F /* car_list.json */; };
+		8645DE6728E249230001611F /* CarsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6528E249230001611F /* CarsListVC.swift */; };
+		8645DE6828E249230001611F /* CarsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8645DE6628E249230001611F /* CarsListVC.xib */; };
+		8645DE6A28E24A450001611F /* CarsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6928E24A450001611F /* CarsListVM.swift */; };
+		8645DE6C28E24A530001611F /* CarsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6B28E24A530001611F /* CarsListService.swift */; };
+		8645DE6E28E24A640001611F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6D28E24A640001611F /* Car.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -38,6 +44,12 @@
 /* Begin PBXFileReference section */
 		8645DE5428E243830001611F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		8645DE5728E2450C0001611F /* ConsultationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationCoordinator.swift; sourceTree = "<group>"; };
+		8645DE5D28E247EF0001611F /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		8645DE6528E249230001611F /* CarsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListVC.swift; sourceTree = "<group>"; };
+		8645DE6628E249230001611F /* CarsListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListVC.xib; sourceTree = "<group>"; };
+		8645DE6928E24A450001611F /* CarsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListVM.swift; sourceTree = "<group>"; };
+		8645DE6B28E24A530001611F /* CarsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListService.swift; sourceTree = "<group>"; };
+		8645DE6D28E24A640001611F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +93,7 @@
 			children = (
 				86A19A2328E23F3600F341AE /* LaunchScreen.storyboard */,
 				86A19A2128E23F3600F341AE /* Assets.xcassets */,
+				8645DE5D28E247EF0001611F /* car_list.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -121,10 +134,10 @@
 		8645DE5628E243AA0001611F /* ConsultationFeature */ = {
 			isa = PBXGroup;
 			children = (
-				8645DE5C28E245550001611F /* Models */,
-				8645DE5B28E245300001611F /* Views */,
-				8645DE5A28E245280001611F /* ViewModels */,
 				8645DE5928E2451F0001611F /* Services */,
+				8645DE5C28E245550001611F /* Models */,
+				8645DE5A28E245280001611F /* ViewModels */,
+				8645DE5B28E245300001611F /* Views */,
 				8645DE5728E2450C0001611F /* ConsultationCoordinator.swift */,
 			);
 			path = ConsultationFeature;
@@ -133,6 +146,7 @@
 		8645DE5928E2451F0001611F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE6B28E24A530001611F /* CarsListService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -140,6 +154,7 @@
 		8645DE5A28E245280001611F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE6928E24A450001611F /* CarsListVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,6 +162,8 @@
 		8645DE5B28E245300001611F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE6028E248500001611F /* Cells */,
+				8645DE5F28E248420001611F /* View Controllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,8 +171,33 @@
 		8645DE5C28E245550001611F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE6F28E24BCA0001611F /* ViewData */,
+				8645DE6D28E24A640001611F /* Car.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8645DE5F28E248420001611F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8645DE6528E249230001611F /* CarsListVC.swift */,
+				8645DE6628E249230001611F /* CarsListVC.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8645DE6028E248500001611F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8645DE6F28E24BCA0001611F /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewData;
 			sourceTree = "<group>";
 		};
 		86A19A0C28E23F3500F341AE = {
@@ -312,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A19A2528E23F3600F341AE /* LaunchScreen.storyboard in Resources */,
+				8645DE6828E249230001611F /* CarsListVC.xib in Resources */,
+				8645DE5E28E247EF0001611F /* car_list.json in Resources */,
 				86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8645DE5528E243830001611F /* AppCoordinator.swift in Sources */,
+				8645DE6C28E24A530001611F /* CarsListService.swift in Sources */,
+				8645DE6E28E24A640001611F /* Car.swift in Sources */,
+				8645DE6A28E24A450001611F /* CarsListVM.swift in Sources */,
 				86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */,
+				8645DE6728E249230001611F /* CarsListVC.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
 				8645DE5828E2450C0001611F /* ConsultationCoordinator.swift in Sources */,
 			);
