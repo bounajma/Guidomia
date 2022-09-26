@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
-		86A19A1D28E23F3500F341AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1C28E23F3500F341AE /* ViewController.swift */; };
-		86A19A2028E23F3500F341AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A1E28E23F3500F341AE /* Main.storyboard */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
 		86A19A2528E23F3600F341AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2328E23F3600F341AE /* LaunchScreen.storyboard */; };
 		86A19A3028E23F3600F341AE /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A2F28E23F3600F341AE /* GuidomiaTests.swift */; };
@@ -39,8 +37,6 @@
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86A19A1C28E23F3500F341AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		86A19A1F28E23F3500F341AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86A19A2128E23F3600F341AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86A19A2428E23F3600F341AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86A19A2628E23F3600F341AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +72,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8645DE4F28E2415D0001611F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86A19A2328E23F3600F341AE /* LaunchScreen.storyboard */,
+				86A19A2128E23F3600F341AE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8645DE5028E2417A0001611F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				86A19A1828E23F3500F341AE /* AppDelegate.swift */,
+				86A19A1A28E23F3500F341AE /* SceneDelegate.swift */,
+				86A19A2628E23F3600F341AE /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		86A19A0C28E23F3500F341AE = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +114,8 @@
 		86A19A1728E23F3500F341AE /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
-				86A19A1828E23F3500F341AE /* AppDelegate.swift */,
-				86A19A1A28E23F3500F341AE /* SceneDelegate.swift */,
-				86A19A1C28E23F3500F341AE /* ViewController.swift */,
-				86A19A1E28E23F3500F341AE /* Main.storyboard */,
-				86A19A2128E23F3600F341AE /* Assets.xcassets */,
-				86A19A2328E23F3600F341AE /* LaunchScreen.storyboard */,
-				86A19A2628E23F3600F341AE /* Info.plist */,
+				8645DE5028E2417A0001611F /* Config */,
+				8645DE4F28E2415D0001611F /* Resources */,
 			);
 			path = Guidomia;
 			sourceTree = "<group>";
@@ -233,7 +243,6 @@
 			files = (
 				86A19A2528E23F3600F341AE /* LaunchScreen.storyboard in Resources */,
 				86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */,
-				86A19A2028E23F3500F341AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A19A1D28E23F3500F341AE /* ViewController.swift in Sources */,
 				86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		86A19A1E28E23F3500F341AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				86A19A1F28E23F3500F341AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		86A19A2328E23F3600F341AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UHSC49UD2Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Guidomia/Info.plist;
+				INFOPLIST_FILE = Guidomia/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,7 +469,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UHSC49UD2Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Guidomia/Info.plist;
+				INFOPLIST_FILE = Guidomia/Config/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
