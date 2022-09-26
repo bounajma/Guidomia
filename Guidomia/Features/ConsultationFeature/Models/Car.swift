@@ -10,10 +10,10 @@ import Foundation
 class Car: Codable {
     var make: String?
     var model: String?
-    var marketPrice: Double
-    var customerPrice: Double
+    var marketPrice: Double = 0.0
+    var customerPrice: Double = 0.0
     var image: String?
-    var rating: Int
+    var rating: Int = 0
     var consList: [String?]
     var prosList: [String?]
 }

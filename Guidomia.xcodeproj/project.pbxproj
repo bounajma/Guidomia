@@ -15,6 +15,9 @@
 		8645DE6A28E24A450001611F /* CarsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6928E24A450001611F /* CarsListVM.swift */; };
 		8645DE6C28E24A530001611F /* CarsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6B28E24A530001611F /* CarsListService.swift */; };
 		8645DE6E28E24A640001611F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE6D28E24A640001611F /* Car.swift */; };
+		8645DE7328E251510001611F /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7228E251510001611F /* DataLoader.swift */; };
+		8645DE7528E251F20001611F /* CarsListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7428E251F20001611F /* CarsListMapper.swift */; };
+		8645DE7728E259D70001611F /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7628E259D70001611F /* LogManager.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		8645DE6928E24A450001611F /* CarsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListVM.swift; sourceTree = "<group>"; };
 		8645DE6B28E24A530001611F /* CarsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListService.swift; sourceTree = "<group>"; };
 		8645DE6D28E24A640001611F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		8645DE7228E251510001611F /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		8645DE7428E251F20001611F /* CarsListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListMapper.swift; sourceTree = "<group>"; };
+		8645DE7628E259D70001611F /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 		8645DE5328E243580001611F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE7228E251510001611F /* DataLoader.swift */,
+				8645DE7628E259D70001611F /* LogManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				8645DE6B28E24A530001611F /* CarsListService.swift */,
+				8645DE7428E251F20001611F /* CarsListMapper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -381,6 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8645DE7728E259D70001611F /* LogManager.swift in Sources */,
+				8645DE7328E251510001611F /* DataLoader.swift in Sources */,
 				8645DE5528E243830001611F /* AppCoordinator.swift in Sources */,
 				8645DE6C28E24A530001611F /* CarsListService.swift in Sources */,
 				8645DE6E28E24A640001611F /* Car.swift in Sources */,
@@ -388,6 +399,7 @@
 				86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */,
 				8645DE6728E249230001611F /* CarsListVC.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
+				8645DE7528E251F20001611F /* CarsListMapper.swift in Sources */,
 				8645DE5828E2450C0001611F /* ConsultationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
