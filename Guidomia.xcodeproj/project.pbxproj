@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8645DE5528E243830001611F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE5428E243830001611F /* AppCoordinator.swift */; };
+		8645DE5828E2450C0001611F /* ConsultationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE5728E2450C0001611F /* ConsultationCoordinator.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8645DE5428E243830001611F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8645DE5728E2450C0001611F /* ConsultationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationCoordinator.swift; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +91,71 @@
 				86A19A1828E23F3500F341AE /* AppDelegate.swift */,
 				86A19A1A28E23F3500F341AE /* SceneDelegate.swift */,
 				86A19A2628E23F3600F341AE /* Info.plist */,
+				8645DE5428E243830001611F /* AppCoordinator.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		8645DE5128E243250001611F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8645DE5628E243AA0001611F /* ConsultationFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8645DE5228E2433A0001611F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8645DE5328E243580001611F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8645DE5628E243AA0001611F /* ConsultationFeature */ = {
+			isa = PBXGroup;
+			children = (
+				8645DE5C28E245550001611F /* Models */,
+				8645DE5B28E245300001611F /* Views */,
+				8645DE5A28E245280001611F /* ViewModels */,
+				8645DE5928E2451F0001611F /* Services */,
+				8645DE5728E2450C0001611F /* ConsultationCoordinator.swift */,
+			);
+			path = ConsultationFeature;
+			sourceTree = "<group>";
+		};
+		8645DE5928E2451F0001611F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8645DE5A28E245280001611F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8645DE5B28E245300001611F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8645DE5C28E245550001611F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		86A19A0C28E23F3500F341AE = {
@@ -114,8 +181,11 @@
 		86A19A1728E23F3500F341AE /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE5128E243250001611F /* Features */,
 				8645DE5028E2417A0001611F /* Config */,
 				8645DE4F28E2415D0001611F /* Resources */,
+				8645DE5228E2433A0001611F /* Extensions */,
+				8645DE5328E243580001611F /* Shared */,
 			);
 			path = Guidomia;
 			sourceTree = "<group>";
@@ -267,8 +337,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8645DE5528E243830001611F /* AppCoordinator.swift in Sources */,
 				86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
+				8645DE5828E2450C0001611F /* ConsultationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
