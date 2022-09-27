@@ -59,6 +59,7 @@
                             <constraint firstItem="tMU-Ne-vo7" firstAttribute="leading" secondItem="9NG-3y-fYy" secondAttribute="trailing" constant="10" id="Z9B-Fu-f8T"/>
                             <constraint firstItem="tMU-Ne-vo7" firstAttribute="bottom" secondItem="9NG-3y-fYy" secondAttribute="bottom" constant="-4" id="c2h-Pe-2Qb"/>
                             <constraint firstItem="9NG-3y-fYy" firstAttribute="top" secondItem="WmL-K8-qK7" secondAttribute="top" constant="20" id="e6t-MH-Zcc"/>
+                            <constraint firstAttribute="height" constant="120" id="fSg-RG-3KN"/>
                         </constraints>
                     </view>
                 </subviews>

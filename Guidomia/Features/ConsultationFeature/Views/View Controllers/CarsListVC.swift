@@ -35,6 +35,7 @@ class CarsListVC: UIViewController, CarsListView {
         self.navigationItem.title = "Guidomia"
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         self.tableView.register(UINib(nibName: CarsListTableCell.cellIdentifier, bundle: Bundle.init(for: CarsListTableCell.self)), forCellReuseIdentifier: CarsListTableCell.cellIdentifier)
+        self.tableView.register(UINib(nibName: CarsListTableViewFooter.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CarsListTableViewFooter.identifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
@@ -64,6 +65,17 @@ extension CarsListVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: CarsListTableViewFooter.identifier) as? CarsListTableViewFooter {
+            return view
+        }
+        return UIView.init()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 30
     }
     
 }
