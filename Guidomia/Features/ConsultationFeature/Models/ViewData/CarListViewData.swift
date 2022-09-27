@@ -11,14 +11,14 @@ class CarListViewData {
     
     var name: String?
     var price: String?
-    var rating: Int = 0
+    var rating: String?
     var image: String?
     
     init(_ car: Car) {
         self.name = car.model
         self.price = "Price: \(car.marketPrice.getFormattedPrice())"
         self.image = car.image
-        self.rating = car.rating
+        self.rating = car.rating.getRatingsStars()
     }
     
 }

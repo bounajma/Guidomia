@@ -18,6 +18,9 @@
 		8645DE7328E251510001611F /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7228E251510001611F /* DataLoader.swift */; };
 		8645DE7528E251F20001611F /* CarsListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7428E251F20001611F /* CarsListMapper.swift */; };
 		8645DE7728E259D70001611F /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7628E259D70001611F /* LogManager.swift */; };
+		8645DE7B28E378490001611F /* CarsListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7928E378490001611F /* CarsListTableCell.swift */; };
+		8645DE7C28E378490001611F /* CarsListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8645DE7A28E378490001611F /* CarsListTableCell.xib */; };
+		8645DE7E28E37C170001611F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7D28E37C170001611F /* Int+Extensions.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		8645DE7228E251510001611F /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		8645DE7428E251F20001611F /* CarsListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListMapper.swift; sourceTree = "<group>"; };
 		8645DE7628E259D70001611F /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		8645DE7928E378490001611F /* CarsListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableCell.swift; sourceTree = "<group>"; };
+		8645DE7A28E378490001611F /* CarsListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListTableCell.xib; sourceTree = "<group>"; };
+		8645DE7D28E37C170001611F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,8 +201,18 @@
 		8645DE6028E248500001611F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8645DE7828E378230001611F /* CarsListTableCell */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8645DE7828E378230001611F /* CarsListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				8645DE7928E378490001611F /* CarsListTableCell.swift */,
+				8645DE7A28E378490001611F /* CarsListTableCell.xib */,
+			);
+			path = CarsListTableCell;
 			sourceTree = "<group>";
 		};
 		86A19A0C28E23F3500F341AE = {
@@ -260,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				E121A18428E2F3FF00E19AE5 /* Double+Extensions.swift */,
+				8645DE7D28E37C170001611F /* Int+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A19A2528E23F3600F341AE /* LaunchScreen.storyboard in Resources */,
+				8645DE7C28E378490001611F /* CarsListTableCell.xib in Resources */,
 				8645DE6828E249230001611F /* CarsListVC.xib in Resources */,
 				8645DE5E28E247EF0001611F /* car_list.json in Resources */,
 				86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */,
@@ -397,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8645DE7728E259D70001611F /* LogManager.swift in Sources */,
+				8645DE7B28E378490001611F /* CarsListTableCell.swift in Sources */,
 				E121A18528E2F3FF00E19AE5 /* Double+Extensions.swift in Sources */,
 				8645DE7328E251510001611F /* DataLoader.swift in Sources */,
 				8645DE5528E243830001611F /* AppCoordinator.swift in Sources */,
@@ -404,6 +423,7 @@
 				8645DE6C28E24A530001611F /* CarsListService.swift in Sources */,
 				8645DE6E28E24A640001611F /* Car.swift in Sources */,
 				8645DE6A28E24A450001611F /* CarsListVM.swift in Sources */,
+				8645DE7E28E37C170001611F /* Int+Extensions.swift in Sources */,
 				86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */,
 				8645DE6728E249230001611F /* CarsListVC.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
