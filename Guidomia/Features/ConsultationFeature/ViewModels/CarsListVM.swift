@@ -26,12 +26,12 @@ class CarsListViewModel {
     
     func getCarsList() {
         
-        self.carsListService.getCarsList { result in
+        self.carsListService.getCarsList { [weak self] result in
             switch result {
             case .success(let list):
-                self.carsList = list
+                self?.carsList = list
             case.failure(_):
-                self.carsList = []
+                self?.carsList = []
             }
         }
         
