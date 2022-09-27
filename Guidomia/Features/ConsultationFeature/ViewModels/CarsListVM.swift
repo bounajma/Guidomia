@@ -11,14 +11,13 @@ import Foundation
 class CarsListViewModel {
     
     var carsListService: CarsListServiceProtocol!
-    var carsList: [Car]? {
+    var carsList: [Car] = [] {
         didSet {
-            if let list = carsList {
-                bindTownList?(list.map { CarListViewData($0) })
-            }
+            carsViewData = carsList.map { CarListViewData($0) }
         }
     }
-    var bindTownList: (([CarListViewData]) -> Void)?
+    var carsViewData: [CarListViewData] = []
+    var bindCarsList: (() -> Void)?
     
     init(service: CarsListServiceProtocol) {
         self.carsListService = service
@@ -33,6 +32,7 @@ class CarsListViewModel {
             case.failure(_):
                 self?.carsList = []
             }
+            self?.bindCarsList?()
         }
         
     }

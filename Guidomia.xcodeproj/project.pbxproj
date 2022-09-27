@@ -21,6 +21,7 @@
 		8645DE7B28E378490001611F /* CarsListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7928E378490001611F /* CarsListTableCell.swift */; };
 		8645DE7C28E378490001611F /* CarsListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8645DE7A28E378490001611F /* CarsListTableCell.xib */; };
 		8645DE7E28E37C170001611F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7D28E37C170001611F /* Int+Extensions.swift */; };
+		8645DE8028E37F160001611F /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7F28E37F160001611F /* UITableViewCell+Extensions.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		8645DE7928E378490001611F /* CarsListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableCell.swift; sourceTree = "<group>"; };
 		8645DE7A28E378490001611F /* CarsListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListTableCell.xib; sourceTree = "<group>"; };
 		8645DE7D28E37C170001611F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		8645DE7F28E37F160001611F /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			children = (
 				E121A18428E2F3FF00E19AE5 /* Double+Extensions.swift */,
 				8645DE7D28E37C170001611F /* Int+Extensions.swift */,
+				8645DE7F28E37F160001611F /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				8645DE6728E249230001611F /* CarsListVC.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
 				8645DE7528E251F20001611F /* CarsListMapper.swift in Sources */,
+				8645DE8028E37F160001611F /* UITableViewCell+Extensions.swift in Sources */,
 				8645DE5828E2450C0001611F /* ConsultationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
