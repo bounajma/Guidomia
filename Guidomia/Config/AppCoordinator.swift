@@ -19,7 +19,6 @@ class AppCoordinator {
     func start(window: UIWindow?) {
        
         self.window = window
-        self.window = UIWindow(frame: UIScreen.main.bounds)
         self.startConsultation()
         self.window?.rootViewController = self.consultation.navController
         self.window?.makeKeyAndVisible()

@@ -14,6 +14,6 @@ class Car: Codable {
     var customerPrice: Double = 0.0
     var image: String?
     var rating: Int = 0
-    var consList: [String?]
-    var prosList: [String?]
+    var consList: [String?]?
+    var prosList: [String?]?
 }
