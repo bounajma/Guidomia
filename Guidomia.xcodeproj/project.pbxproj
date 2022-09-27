@@ -25,6 +25,8 @@
 		86A19A3028E23F3600F341AE /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A2F28E23F3600F341AE /* GuidomiaTests.swift */; };
 		86A19A3A28E23F3600F341AE /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A3928E23F3600F341AE /* GuidomiaUITests.swift */; };
 		86A19A3C28E23F3600F341AE /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A3B28E23F3600F341AE /* GuidomiaUITestsLaunchTests.swift */; };
+		E121A18228E2F00C00E19AE5 /* CarListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121A18128E2F00C00E19AE5 /* CarListViewData.swift */; };
+		E121A18528E2F3FF00E19AE5 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121A18428E2F3FF00E19AE5 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		86A19A3528E23F3600F341AE /* GuidomiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A3928E23F3600F341AE /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		86A19A3B28E23F3600F341AE /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E121A18128E2F00C00E19AE5 /* CarListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewData.swift; sourceTree = "<group>"; };
+		E121A18428E2F3FF00E19AE5 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +127,6 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		8645DE5228E2433A0001611F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		8645DE5328E243580001611F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +177,7 @@
 		8645DE5C28E245550001611F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8645DE6F28E24BCA0001611F /* ViewData */,
+				E121A18028E2EFFA00E19AE5 /* ViewData */,
 				8645DE6D28E24A640001611F /* Car.swift */,
 			);
 			path = Models;
@@ -200,13 +197,6 @@
 			children = (
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		8645DE6F28E24BCA0001611F /* ViewData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewData;
 			sourceTree = "<group>";
 		};
 		86A19A0C28E23F3500F341AE = {
@@ -235,8 +225,8 @@
 				8645DE5128E243250001611F /* Features */,
 				8645DE5028E2417A0001611F /* Config */,
 				8645DE4F28E2415D0001611F /* Resources */,
-				8645DE5228E2433A0001611F /* Extensions */,
 				8645DE5328E243580001611F /* Shared */,
+				E121A18328E2F3DB00E19AE5 /* Extensions */,
 			);
 			path = Guidomia;
 			sourceTree = "<group>";
@@ -256,6 +246,22 @@
 				86A19A3B28E23F3600F341AE /* GuidomiaUITestsLaunchTests.swift */,
 			);
 			path = GuidomiaUITests;
+			sourceTree = "<group>";
+		};
+		E121A18028E2EFFA00E19AE5 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				E121A18128E2F00C00E19AE5 /* CarListViewData.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
+		E121A18328E2F3DB00E19AE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E121A18428E2F3FF00E19AE5 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,8 +397,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8645DE7728E259D70001611F /* LogManager.swift in Sources */,
+				E121A18528E2F3FF00E19AE5 /* Double+Extensions.swift in Sources */,
 				8645DE7328E251510001611F /* DataLoader.swift in Sources */,
 				8645DE5528E243830001611F /* AppCoordinator.swift in Sources */,
+				E121A18228E2F00C00E19AE5 /* CarListViewData.swift in Sources */,
 				8645DE6C28E24A530001611F /* CarsListService.swift in Sources */,
 				8645DE6E28E24A640001611F /* Car.swift in Sources */,
 				8645DE6A28E24A450001611F /* CarsListVM.swift in Sources */,
