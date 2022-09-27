@@ -27,7 +27,7 @@ class CarsListService: CarsListServiceProtocol {
                 let cars = try CarsListMapper.map(data)
                     completion(.success(cars))
                 } catch {
-                    log.error("Error Can't load data \(error)")
+                    log.error("Error Can't map data \(error)")
                     completion(.failure(error))
                 }
             case .failure(let error):

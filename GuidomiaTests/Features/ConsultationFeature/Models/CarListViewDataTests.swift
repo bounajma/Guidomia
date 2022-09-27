@@ -22,7 +22,7 @@ class CarListViewDataTests: XCTestCase {
         sut = nil
     }
     
-    func test_right_initialisation() throws {
+    func testRightInitFromCar() {
         XCTAssertEqual(sut?.name, "Model S")
         XCTAssertEqual(sut?.price, "Price: 80.0k")
         XCTAssertEqual(sut?.image, "modelS")
