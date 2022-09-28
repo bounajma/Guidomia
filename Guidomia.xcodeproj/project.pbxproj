@@ -40,6 +40,7 @@
 		8645DEB028E3CD8C0001611F /* CarsListFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DEAF28E3CD8C0001611F /* CarsListFormatterTests.swift */; };
 		8645DEB328E4E7F60001611F /* CarsListTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DEB128E4E7F60001611F /* CarsListTableViewHeader.swift */; };
 		8645DEB428E4E7F60001611F /* CarsListTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8645DEB228E4E7F60001611F /* CarsListTableViewHeader.xib */; };
+		8645DEB628E4F3180001611F /* CarsListViewHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DEB528E4F3180001611F /* CarsListViewHeaderViewModel.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		8645DEAF28E3CD8C0001611F /* CarsListFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListFormatterTests.swift; sourceTree = "<group>"; };
 		8645DEB128E4E7F60001611F /* CarsListTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableViewHeader.swift; sourceTree = "<group>"; };
 		8645DEB228E4E7F60001611F /* CarsListTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListTableViewHeader.xib; sourceTree = "<group>"; };
+		8645DEB528E4F3180001611F /* CarsListViewHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewHeaderViewModel.swift; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				8645DEA328E3BB6E0001611F /* ExpandableCarsListTableCell.xib */,
 				8645DEB128E4E7F60001611F /* CarsListTableViewHeader.swift */,
 				8645DEB228E4E7F60001611F /* CarsListTableViewHeader.xib */,
+				8645DEB528E4F3180001611F /* CarsListViewHeaderViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				8645DE7E28E37C170001611F /* Int+Extensions.swift in Sources */,
 				8645DE8228E387630001611F /* Coordinator.swift in Sources */,
 				86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */,
+				8645DEB628E4F3180001611F /* CarsListViewHeaderViewModel.swift in Sources */,
 				8645DE6728E249230001611F /* CarsListVC.swift in Sources */,
 				86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */,
 				8645DE8828E395150001611F /* UITableViewHeaderFooterView+Extensions.swift in Sources */,

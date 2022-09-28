@@ -49,4 +49,11 @@ class CarsListViewModel {
         self.bindCarsList?()
     }
     
+    func getHeaderViewModel() -> CarsListViewTableHeaderViewModelProtocol {
+        let makes = self.carsList.map { $0.make ?? "" }.filter { !$0.isEmpty }
+        let models = self.carsList.map { $0.model ?? "" }.filter { !$0.isEmpty }
+        let vm = CarsListViewTableHeaderViewModel(makes: makes, models: models)
+        return vm
+    }
+    
 }

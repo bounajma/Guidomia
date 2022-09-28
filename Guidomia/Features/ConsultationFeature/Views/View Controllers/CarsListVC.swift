@@ -78,6 +78,7 @@ extension CarsListVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0, let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: CarsListTableViewHeader.identifier) as? CarsListTableViewHeader {
+            view.setupViewModel(viewModel: self.viewModel.getHeaderViewModel())
             return view
         }
         return UIView.init()
