@@ -44,6 +44,7 @@ class CarsListVC: UIViewController, CarsListView {
     
     func setupViewsModel() {
         self.viewModel.bindCarsList = { [weak self] in
+            self?.view.endEditing(true)
             self?.tableView.reloadData()
         }
     }

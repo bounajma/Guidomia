@@ -60,9 +60,15 @@ extension CarsListTableViewHeader: UIPickerViewDelegate, UIPickerViewDataSource 
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 1 {
-            self.makeTextField.text = self.viewModel.makeValues[row]
+            let text = self.viewModel.makeValues[row]
+            self.makeTextField.text = text
+            self.ModelTextField.text = nil
+            self.viewModel.selectionHandler?(.make(text))
         } else {
-            self.ModelTextField.text = self.viewModel.modelValues[row]
+            let text = self.viewModel.modelValues[row]
+            self.makeTextField.text = nil
+            self.ModelTextField.text = text
+            self.viewModel.selectionHandler?(.model(text))
         }
     }
 }

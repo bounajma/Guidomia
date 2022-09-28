@@ -14,9 +14,10 @@ class CarsListViewModel {
     var selectedIndex = 0
     var carsList: [Car] = [] {
         didSet {
-            updateCarsViewData()
+            updateCarsViewData(self.carsList)
         }
     }
+    var filteredCarsList: [Car]?
     var carsViewData: [ExpandableCarListViewData] = []
     var bindCarsList: (() -> Void)?
     
@@ -37,15 +38,15 @@ class CarsListViewModel {
         }
         
     }
-    func updateCarsViewData() {
+    func updateCarsViewData(_ list: [Car]) {
         carsViewData = []
-        for i in 0 ..< carsList.count {
-            carsViewData.append(CarsListFormatter.formatCarViewData(carsList[i], expanded: i == selectedIndex))
+        for i in 0 ..< list.count {
+            carsViewData.append(CarsListFormatter.formatCarViewData(list[i], expanded: i == selectedIndex))
         }
     }
     func didSelectCell(index: Int) {
         self.selectedIndex = index
-        updateCarsViewData()
+        updateCarsViewData(self.filteredCarsList ?? self.carsList)
         self.bindCarsList?()
     }
     
@@ -53,7 +54,23 @@ class CarsListViewModel {
         let makes = self.carsList.map { $0.make ?? "" }.filter { !$0.isEmpty }
         let models = self.carsList.map { $0.model ?? "" }.filter { !$0.isEmpty }
         let vm = CarsListViewTableHeaderViewModel(makes: makes, models: models)
+        vm.selectionHandler = { [weak self] filter in
+            self?.filterCarsList(filter: filter)
+            self?.updateCarsViewData(self?.filteredCarsList ?? [])
+            self?.bindCarsList?()
+        }
         return vm
+    }
+    
+    func filterCarsList(filter: CarsListFilter) {
+        
+        switch filter {
+        case .make(let text):
+            self.filteredCarsList = carsList.filter { $0.make == text}
+            
+        case .model(let text):
+            self.filteredCarsList = carsList.filter { $0.model == text}
+        }
     }
     
 }
