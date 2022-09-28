@@ -27,7 +27,6 @@ class CarsListFormatterTests: XCTestCase {
         XCTAssertNil(viewData.consText)
         XCTAssertEqual(viewData.bottomConstant, 0)
     }
-
     
     func makeData() -> Car {
         let mock = Car()

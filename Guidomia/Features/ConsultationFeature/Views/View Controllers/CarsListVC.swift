@@ -25,6 +25,7 @@ class CarsListVC: UIViewController, CarsListView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Guidomia"
         setupTableView()
         setupViewsModel()
         self.viewModel.getCarsList()
@@ -32,12 +33,9 @@ class CarsListVC: UIViewController, CarsListView {
     
     
     func setupTableView() {
-        self.navigationItem.title = "Guidomia"
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         self.tableView.register(UINib(nibName: ExpandableCarsListTableCell.cellIdentifier, bundle: Bundle.init(for: ExpandableCarsListTableCell.self)), forCellReuseIdentifier: ExpandableCarsListTableCell.cellIdentifier)
         self.tableView.register(UINib(nibName: CarsListTableViewFooter.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CarsListTableViewFooter.identifier)
-//        self.tableView.tableFooterView = UIView.init(frame: CGRect.zero)
-//        self.tableView.sectionFooterHeight = 0.1
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
