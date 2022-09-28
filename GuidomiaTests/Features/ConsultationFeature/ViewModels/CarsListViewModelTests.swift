@@ -90,6 +90,29 @@ class CarsListViewModelTests: XCTestCase {
         XCTAssertEqual(didUpdateView, 2)
     }
     
+    func testShouldInitTheRightHeaderViewModel() {
+        let mock = CarsListServiceMock()
+        let vm = makeSUT(service: mock)
+        vm.getCarsList()
+        XCTAssertEqual(mock.getInvocations.count, 1)
+        mock.getInvocations.first?(.success(makeData()))
+        let headerVM = vm.getHeaderViewModel()
+        XCTAssertEqual(headerVM.makeValues.count, 2)
+        XCTAssertEqual(headerVM.modelValues.count, 2)
+    }
+    
+    func testShouldApplyRightFiltersAfterUpdateFromHeaderViewModel() {
+        let mock = CarsListServiceMock()
+        let vm = makeSUT(service: mock)
+        vm.getCarsList()
+        XCTAssertEqual(mock.getInvocations.count, 1)
+        mock.getInvocations.first?(.success(makeData()))
+        let headerVM = vm.getHeaderViewModel()
+        headerVM.selectionHandler?(.make("Mercedes"))
+        XCTAssertEqual(vm.filteredCarsList?.count, 1)
+        XCTAssertEqual(vm.filteredCarsList?.first?.model, "Gle")
+    }
+    
     func makeSUT(service: CarsListServiceProtocol) -> CarsListViewModel {
         let sut = CarsListViewModel(service: service)
         return sut
@@ -104,7 +127,7 @@ class CarsListViewModelTests: XCTestCase {
         car1.rating = 4
         
         car2.make = "Tesla"
-        car2.make = "ModelS"
+        car2.model = "ModelS"
         car2.rating = 5
         
         return [car1, car2]
