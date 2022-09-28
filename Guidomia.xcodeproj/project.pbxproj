@@ -18,8 +18,6 @@
 		8645DE7328E251510001611F /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7228E251510001611F /* DataLoader.swift */; };
 		8645DE7528E251F20001611F /* CarsListMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7428E251F20001611F /* CarsListMapper.swift */; };
 		8645DE7728E259D70001611F /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7628E259D70001611F /* LogManager.swift */; };
-		8645DE7B28E378490001611F /* CarsListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7928E378490001611F /* CarsListTableCell.swift */; };
-		8645DE7C28E378490001611F /* CarsListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8645DE7A28E378490001611F /* CarsListTableCell.xib */; };
 		8645DE7E28E37C170001611F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7D28E37C170001611F /* Int+Extensions.swift */; };
 		8645DE8028E37F160001611F /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE7F28E37F160001611F /* UITableViewCell+Extensions.swift */; };
 		8645DE8228E387630001611F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DE8128E387630001611F /* Coordinator.swift */; };
@@ -79,8 +77,6 @@
 		8645DE7228E251510001611F /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		8645DE7428E251F20001611F /* CarsListMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListMapper.swift; sourceTree = "<group>"; };
 		8645DE7628E259D70001611F /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
-		8645DE7928E378490001611F /* CarsListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableCell.swift; sourceTree = "<group>"; };
-		8645DE7A28E378490001611F /* CarsListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsListTableCell.xib; sourceTree = "<group>"; };
 		8645DE7D28E37C170001611F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		8645DE7F28E37F160001611F /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		8645DE8128E387630001611F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -247,8 +243,6 @@
 		8645DE7828E378230001611F /* CarsListTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				8645DE7928E378490001611F /* CarsListTableCell.swift */,
-				8645DE7A28E378490001611F /* CarsListTableCell.xib */,
 				8645DE8328E391E70001611F /* CarsListTableViewFooter.swift */,
 				8645DE8428E391E70001611F /* CarsListTableViewFooter.xib */,
 				8645DEA228E3BB6E0001611F /* ExpandableCarsListTableCell.swift */,
@@ -513,7 +507,6 @@
 			files = (
 				86A19A2528E23F3600F341AE /* LaunchScreen.storyboard in Resources */,
 				8645DE8628E391E70001611F /* CarsListTableViewFooter.xib in Resources */,
-				8645DE7C28E378490001611F /* CarsListTableCell.xib in Resources */,
 				8645DE6828E249230001611F /* CarsListVC.xib in Resources */,
 				8645DEA528E3BB6E0001611F /* ExpandableCarsListTableCell.xib in Resources */,
 				8645DE5E28E247EF0001611F /* car_list.json in Resources */,
@@ -545,7 +538,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8645DE7728E259D70001611F /* LogManager.swift in Sources */,
-				8645DE7B28E378490001611F /* CarsListTableCell.swift in Sources */,
 				E121A18528E2F3FF00E19AE5 /* Double+Extensions.swift in Sources */,
 				8645DE7328E251510001611F /* DataLoader.swift in Sources */,
 				8645DE5528E243830001611F /* AppCoordinator.swift in Sources */,

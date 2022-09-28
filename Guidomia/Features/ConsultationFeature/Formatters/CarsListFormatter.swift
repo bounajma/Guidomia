@@ -35,8 +35,8 @@ class CarsListFormatter {
         let attributed = NSMutableAttributedString()
         for data in datas {
             if let data = data, !data.isEmpty {
-                attributed.append(NSAttributedString(string: " •", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "AppOrange") ?? UIColor.orange, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 19, weight: .medium)]))
-                attributed.append(NSAttributedString(string: " \(data)\n", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 19, weight: .medium)]))
+                attributed.append(NSAttributedString(string: " •", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "AppOrange") ?? UIColor.orange, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 26, weight: .heavy)]))
+                attributed.append(NSAttributedString(string: " \(data)\n", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .semibold)]))
                 
             }
         }
