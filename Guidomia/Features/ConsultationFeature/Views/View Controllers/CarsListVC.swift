@@ -33,9 +33,11 @@ class CarsListVC: UIViewController, CarsListView {
     
     
     func setupTableView() {
+        
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         self.tableView.register(UINib(nibName: ExpandableCarsListTableCell.cellIdentifier, bundle: Bundle.init(for: ExpandableCarsListTableCell.self)), forCellReuseIdentifier: ExpandableCarsListTableCell.cellIdentifier)
         self.tableView.register(UINib(nibName: CarsListTableViewFooter.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CarsListTableViewFooter.identifier)
+        self.tableView.register(UINib(nibName: CarsListTableViewHeader.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: CarsListTableViewHeader.identifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
@@ -74,8 +76,15 @@ extension CarsListVC: UITableViewDelegate, UITableViewDataSource {
         return UIView.init()
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 0, let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: CarsListTableViewHeader.identifier) as? CarsListTableViewHeader {
+            return view
+        }
+        return UIView.init()
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.1
+        return section == 0 ? 500 : 0.1
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

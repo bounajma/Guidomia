@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="437" id="KGk-i7-Jjw" customClass="CarsListTableViewHeader" customModule="Guidomia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="437"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="437"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tacoma" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jy1-RY-mK8">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="237"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Jy1-RY-mK8" secondAttribute="height" multiplier="4:3" id="c4h-YI-zi1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get yours now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNu-vN-2MJ">
+                        <rect key="frame" x="16" y="199.5" width="268" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacoma 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM3-Dw-vTm">
+                        <rect key="frame" x="16" y="164.5" width="268" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMj-u4-CbT">
+                        <rect key="frame" x="20" y="257" width="276" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="748" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="US8-pU-Upe">
+                                <rect key="frame" x="16" y="16" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any make" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjO-wd-lGf">
+                                <rect key="frame" x="16" y="47" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="AnyModel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q04-Xt-v6y">
+                                <rect key="frame" x="16" y="96" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" name="AppDarkGray"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xjO-wd-lGf" secondAttribute="trailing" constant="16" id="6Cy-AM-ndg"/>
+                            <constraint firstItem="q04-Xt-v6y" firstAttribute="leading" secondItem="tMj-u4-CbT" secondAttribute="leading" constant="16" id="CgA-kH-Sog"/>
+                            <constraint firstAttribute="bottom" secondItem="q04-Xt-v6y" secondAttribute="bottom" constant="20" id="PJT-Dm-nhe"/>
+                            <constraint firstAttribute="trailing" secondItem="q04-Xt-v6y" secondAttribute="trailing" constant="16" id="Rvs-UP-03Z"/>
+                            <constraint firstItem="xjO-wd-lGf" firstAttribute="leading" secondItem="tMj-u4-CbT" secondAttribute="leading" constant="16" id="TXm-9f-VRz"/>
+                            <constraint firstItem="q04-Xt-v6y" firstAttribute="top" secondItem="xjO-wd-lGf" secondAttribute="bottom" constant="15" id="TxG-pd-mZP"/>
+                            <constraint firstItem="US8-pU-Upe" firstAttribute="leading" secondItem="tMj-u4-CbT" secondAttribute="leading" constant="16" id="hpa-98-WjC"/>
+                            <constraint firstItem="xjO-wd-lGf" firstAttribute="top" secondItem="US8-pU-Upe" secondAttribute="bottom" constant="10" id="mmT-YT-g3B"/>
+                            <constraint firstAttribute="trailing" secondItem="US8-pU-Upe" secondAttribute="trailing" constant="16" id="oJ5-sD-c2T"/>
+                            <constraint firstItem="US8-pU-Upe" firstAttribute="top" secondItem="tMj-u4-CbT" secondAttribute="top" constant="16" id="zNB-lE-g7H"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jy1-RY-mK8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="23K-C3-hqZ"/>
+                    <constraint firstAttribute="trailing" secondItem="tMj-u4-CbT" secondAttribute="trailing" constant="20" id="6ZG-UC-wtG"/>
+                    <constraint firstAttribute="trailing" secondItem="Jy1-RY-mK8" secondAttribute="trailing" id="9n4-iT-Z9h"/>
+                    <constraint firstAttribute="bottom" secondItem="tMj-u4-CbT" secondAttribute="bottom" constant="30" id="Eej-jf-f8R"/>
+                    <constraint firstItem="HNu-vN-2MJ" firstAttribute="bottom" secondItem="Jy1-RY-mK8" secondAttribute="bottom" constant="-16" id="Q53-ZY-cVx"/>
+                    <constraint firstItem="HNu-vN-2MJ" firstAttribute="top" secondItem="RM3-Dw-vTm" secondAttribute="bottom" constant="-1" id="SM4-EO-CuX"/>
+                    <constraint firstItem="RM3-Dw-vTm" firstAttribute="trailing" secondItem="HNu-vN-2MJ" secondAttribute="trailing" id="c8N-Fc-l0O"/>
+                    <constraint firstItem="tMj-u4-CbT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eEN-DY-X4y"/>
+                    <constraint firstItem="RM3-Dw-vTm" firstAttribute="leading" secondItem="HNu-vN-2MJ" secondAttribute="leading" id="hvB-oJ-4wJ"/>
+                    <constraint firstItem="HNu-vN-2MJ" firstAttribute="leading" secondItem="Jy1-RY-mK8" secondAttribute="leading" constant="16" id="nIu-qw-XxK"/>
+                    <constraint firstItem="Jy1-RY-mK8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rH1-TV-1iL"/>
+                    <constraint firstItem="tMj-u4-CbT" firstAttribute="top" secondItem="Jy1-RY-mK8" secondAttribute="bottom" constant="20" id="suR-4o-C1M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HNu-vN-2MJ" secondAttribute="trailing" constant="16" id="u1t-Ee-Zcd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ModelTextField" destination="q04-Xt-v6y" id="Qca-Qz-JSt"/>
+                <outlet property="filtersView" destination="tMj-u4-CbT" id="q4i-VO-V8r"/>
+                <outlet property="makeTextField" destination="xjO-wd-lGf" id="Igi-SD-6wR"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="203.23660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tacoma" width="1824" height="1216"/>
+        <namedColor name="AppDarkGray">
+            <color red="0.52156862745098043" green="0.52156862745098043" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
