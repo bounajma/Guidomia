@@ -39,6 +39,7 @@
 		8645DEA528E3BB6E0001611F /* ExpandableCarsListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8645DEA328E3BB6E0001611F /* ExpandableCarsListTableCell.xib */; };
 		8645DEA728E3BF570001611F /* ExpandableCarListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DEA628E3BF570001611F /* ExpandableCarListViewData.swift */; };
 		8645DEAA28E3C1770001611F /* CarsListFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DEA928E3C1770001611F /* CarsListFormatter.swift */; };
+		8645DEB028E3CD8C0001611F /* CarsListFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8645DEAF28E3CD8C0001611F /* CarsListFormatterTests.swift */; };
 		86A19A1928E23F3500F341AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1828E23F3500F341AE /* AppDelegate.swift */; };
 		86A19A1B28E23F3500F341AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A19A1A28E23F3500F341AE /* SceneDelegate.swift */; };
 		86A19A2228E23F3600F341AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A19A2128E23F3600F341AE /* Assets.xcassets */; };
@@ -99,6 +100,7 @@
 		8645DEA328E3BB6E0001611F /* ExpandableCarsListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandableCarsListTableCell.xib; sourceTree = "<group>"; };
 		8645DEA628E3BF570001611F /* ExpandableCarListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCarListViewData.swift; sourceTree = "<group>"; };
 		8645DEA928E3C1770001611F /* CarsListFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListFormatter.swift; sourceTree = "<group>"; };
+		8645DEAF28E3CD8C0001611F /* CarsListFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListFormatterTests.swift; sourceTree = "<group>"; };
 		86A19A1528E23F3500F341AE /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A19A1828E23F3500F341AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86A19A1A28E23F3500F341AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 		8645DE8A28E3978C0001611F /* ConsultationFeature */ = {
 			isa = PBXGroup;
 			children = (
+				8645DEAD28E3CD590001611F /* Formatters */,
 				8645DE9F28E3B2AB0001611F /* Utils */,
 				8645DE9128E3A0940001611F /* Resources */,
 				8645DE8E28E39FAB0001611F /* Services */,
@@ -323,6 +326,14 @@
 			isa = PBXGroup;
 			children = (
 				8645DEA928E3C1770001611F /* CarsListFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		8645DEAD28E3CD590001611F /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				8645DEAF28E3CD8C0001611F /* CarsListFormatterTests.swift */,
 			);
 			path = Formatters;
 			sourceTree = "<group>";
@@ -569,6 +580,7 @@
 				8645DE9028E3A0250001611F /* CarsListMapperTests.swift in Sources */,
 				8645DE9B28E3A8FE0001611F /* JSONDataLoaderMock.swift in Sources */,
 				8645DE9E28E3B27B0001611F /* CarsListViewModelTests.swift in Sources */,
+				8645DEB028E3CD8C0001611F /* CarsListFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

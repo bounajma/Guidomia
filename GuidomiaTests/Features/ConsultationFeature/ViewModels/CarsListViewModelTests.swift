@@ -66,6 +66,30 @@ class CarsListViewModelTests: XCTestCase {
         XCTAssertEqual(vm.carsViewData.first?.rating, "⭐⭐⭐⭐")
     }
     
+    func testDidSelectCellShouldUpdateSelectedIndexVariable() {
+        let mock = CarsListServiceMock()
+        let vm = makeSUT(service: mock)
+        vm.getCarsList()
+        XCTAssertEqual(mock.getInvocations.count, 1)
+        mock.getInvocations.first?(.success(makeData()))
+        vm.didSelectCell(index: 2)
+        XCTAssertEqual(vm.selectedIndex, 2)
+    }
+    
+    func testDidSelectCellShouldUpdateViewByInvokeBinding() {
+        let mock = CarsListServiceMock()
+        let vm = makeSUT(service: mock)
+        var didUpdateView = 0
+        vm.bindCarsList = {
+            didUpdateView += 1
+        }
+        vm.getCarsList()
+        XCTAssertEqual(mock.getInvocations.count, 1)
+        mock.getInvocations.first?(.success(makeData()))
+        vm.didSelectCell(index: 2)
+        XCTAssertEqual(didUpdateView, 2)
+    }
+    
     func makeSUT(service: CarsListServiceProtocol) -> CarsListViewModel {
         let sut = CarsListViewModel(service: service)
         return sut
