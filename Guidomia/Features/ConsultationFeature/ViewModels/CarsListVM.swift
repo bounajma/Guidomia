@@ -11,12 +11,13 @@ import Foundation
 class CarsListViewModel {
     
     var carsListService: CarsListServiceProtocol!
+    var selectedIndex = 0
     var carsList: [Car] = [] {
         didSet {
-            carsViewData = carsList.map { CarListViewData($0) }
+            updateCarsViewData()
         }
     }
-    var carsViewData: [CarListViewData] = []
+    var carsViewData: [ExpandableCarListViewData] = []
     var bindCarsList: (() -> Void)?
     
     init(service: CarsListServiceProtocol) {
@@ -35,6 +36,17 @@ class CarsListViewModel {
             self?.bindCarsList?()
         }
         
+    }
+    func updateCarsViewData() {
+        carsViewData = []
+        for i in 0 ..< carsList.count {
+            carsViewData.append(CarsListFormatter.formatCarViewData(carsList[i], expanded: i == selectedIndex))
+        }
+    }
+    func didSelectCell(index: Int) {
+        self.selectedIndex = index
+        updateCarsViewData()
+        self.bindCarsList?()
     }
     
 }
